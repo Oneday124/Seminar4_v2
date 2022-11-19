@@ -1,13 +1,13 @@
 ﻿// Напишите программу, которая принимает на вход число N и выдает произведение чисел от 1 до N
 long Composition (int n)
 {
-    long composition = 1;
-    if(n <= 0) composition = -1;
+    long result = 1;
+    if(n <= 0) result = -1;
     for(int i = 1; i <= n; i++)
     {
-        composition = composition * i;
+        result *= i;
     }
-    return composition;
+    return result;
 }
 
 Console.WriteLine("Введите число N: ");
